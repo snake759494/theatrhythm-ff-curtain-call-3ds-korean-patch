@@ -119,12 +119,24 @@ def pad_col0(img, w):
     return img, w
 
 
-def extend_font(data, name, need, cache):
+def is_kanji(c):
+    return 0x3400 <= c <= 0x4dbf or 0x4e00 <= c <= 0x9fff or 0xf900 <= c <= 0xfaff
+
+
+def extend_font(data, name, need, cache, keep=None):
     from style import ref_stats, make_glyph, pick_ttf
     f = parse(data)
     gl = glyph_images(f); ng = len(gl)
     widths = [f['widths'].get(i, (0, 0, 0)) for i in range(ng)]
     cm = dict(f['cmap_d'])
+    if keep is not None:
+        # 번역 후 화면에 더는 나오지 않는 한자 글리프를 빼서 메모리를 줄인다(Old 3DS 메모리 부족 대책)
+        cm = {c: i for c, i in cm.items() if not is_kanji(c) or c in keep}
+        used = sorted(set(cm.values()) | {f['altidx']})
+        remap = {o: n for n, o in enumerate(used)}
+        gl = [gl[o] for o in used]; widths = [widths[o] for o in used]
+        cm = {c: remap[i] for c, i in cm.items()}
+        f = dict(f); f['altidx'] = remap[f['altidx']]
     key = (name, hashlib.md5(data[:4096]).hexdigest(), f['cellw'], f['cellh'])
     if key not in cache:
         st = ref_stats(f)
@@ -162,8 +174,9 @@ def process_arc(args):
         if not any(c >= 0x3000 for c in f['cmap_d']): continue
         need = set(needed_for(f['cmap_d'].keys(), pairs, allko))
         need |= set(c for c in sneed.get(p.split('/')[-1], ()) if c >= 0x20 and c not in f['cmap_d'])
-        if not need: continue
-        repl[p] = extend_font(x, p.split('/')[-1], sorted(need), cache)
+        keep = set(allko) | sneed.get(p.split('/')[-1], set())
+        if not need and not any(is_kanji(c) and c not in keep for c in f['cmap_d']): continue
+        repl[p] = extend_font(x, p.split('/')[-1], sorted(need), cache, keep)
     # images
     import bclim, plate
     m_ = re.search(r'(abi|itm)(\d{3})_plate', rel)
@@ -217,7 +230,8 @@ def system_font(allko):
         for b2 in range(0xa1, 0xff):
             try: ks.add(ord(bytes([b1, b2]).decode('euc-kr')))
             except Exception: pass
-    chars = sorted((ks | set(c for c in allko if 0xac00 <= c <= 0xd7a3 or 0x3131 <= c <= 0x318e)) - set(cm))
+    # 상주 메모리를 줄이기 위해 번역문에 실제로 쓰인 한글만 넣는다(KS X 1001 전체를 넣으면 Old 3DS에서 메모리 부족)
+    chars = sorted(set(c for c in allko if 0xac00 <= c <= 0xd7a3 or 0x3131 <= c <= 0x318e) - set(cm))
     ttf = os.path.join(os.path.dirname(W), 'NanumSquareNeo-bRg.ttf')
     cw, ch, bl = 22, f['cellh'], f['baseline']
     for c in chars:
@@ -263,6 +277,7 @@ def main():
         r = ln.split(',')
         if len(r) > 2 and r[0].startswith('CARD'): names[int(r[0][4:])] = (m.get(r[1], r[1]), r[2])
     print('card backs', ura.build_all(R, names, OUT))
+    import codepatch; codepatch.main()
 
 
 if __name__ == '__main__':

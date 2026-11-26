@@ -45,14 +45,15 @@ bash scripts/make_rom.sh         # ../...(Korean).3ds
 1. `mdt`·`tdt` 문장과 `table/*.csv` 이름 열을 한국어로 교체
 2. 본체 공용 글꼴 대체용 `font/cbf_std_replace.bcfnt` 생성
 3. 모든 `*.arc.lz`를 풀어 레이아웃 고정 문구 교체, 아카이브 안 `bcfnt`에 필요한 한글 추가, 그림 글자·이름판 교체(병렬 처리)
-4. 컬렉카 뒷면 162장과 컬렉션 축소 그림 162장 생성(`ura.py`)
+4. 콜렉션 카드 뒷면 162장과 컬렉션 축소 그림 162장 생성(`ura.py`)
+5. 실행 파일의 카드 이름 서식 문자열 교체(`codepatch.py`, 결과는 `out_exefs.bin`)
 
 `make_rom.sh`는 원본 romfs 위에 `out_romfs`를 덮어 romfs를 다시 만들고, 암호화하지 않은 CXI와 CCI로 묶습니다.
 
 ## 배포 파일 만들기
 
 ```bash
-xdelta3 -e -0 -s "../Theatrhythm Final Fantasy - Curtain Call (Japan).3ds" "../Theatrhythm Final Fantasy - Curtain Call (Korean).3ds" Theatrhythm_FF_CurtainCall_3DS_KO_v1.0.xdelta
+xdelta3 -e -0 -s "../Theatrhythm Final Fantasy - Curtain Call (Japan).3ds" "../Theatrhythm Final Fantasy - Curtain Call (Korean).3ds" Theatrhythm_FF_CurtainCall_3DS_KO_v1.1.xdelta
 ```
 
 결과 ROM의 MD5가 README 표의 값과 같으면 배포판과 같은 결과입니다.

@@ -1,17 +1,17 @@
 {
- "version": "v1.0",
- "date": "2026-11-26",
+ "version": "v1.1",
+ "date": "2026-11-27",
  "game": "Theatrhythm Final Fantasy - Curtain Call (Japan) / 00040000000E9A00 / 3DS (.3ds, decrypted)",
- "asset": "Theatrhythm_FF_CurtainCall_3DS_KO_v1.0.xdelta",
- "asset_size": 86064357,
- "asset_sha256": "ea54619e98a5ac011d7a2351b60e5c90b2693a7f10ea7cbf6c4624b6b475539e",
+ "asset": "Theatrhythm_FF_CurtainCall_3DS_KO_v1.1.xdelta",
+ "asset_size": 81915426,
+ "asset_sha256": "1d6e2300497e6ad471157a5df5409e72098ef6a8957c394d3debe8e1060aa21f",
  "xdelta_options": "xdelta3 -e -0 (no compression)",
  "source_size": 2147483648,
  "source_md5": "7ca9ed572d0c3ff214c9fc3130a8ef7c",
  "source_sha1": "fbfff5e65766209aeea1963c7d7742d5f239ccc7",
  "source_sha256": "2941175f989ecf0651ab0599636e8d4dd43f7d07b8e4261063794f414f06b797",
  "output_size": 2147483648,
- "output_md5": "d4f2b21ca4756471e7a6dc2ea5a53052",
- "output_sha1": "83d40e199e960f87d248c847ac3e90f5732e88ac",
- "output_sha256": "e9e659b0565929f84c0c2f5bb8edd2c6978d7888d470f382a5360bc9c0e28362"
+ "output_md5": "d5a36adb48e12c82469baaa62cb6f6b4",
+ "output_sha1": "93c9e5e3962d865c61c318a491aeac3be2206b48",
+ "output_sha256": "c4f99ee849b76f99bf4363c7271497a9001b54930e686dc81e390beb98362e11"
 }

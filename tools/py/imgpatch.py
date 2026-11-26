@@ -99,9 +99,9 @@ def specs(names):
     return S
 
 # ---- 타이틀 로고 하단 문구 ----
-LOGO_KO='시어트리듬 파이널 판타지 커튼콜'
+LOGO_KO='시아트리듬 파이널 판타지 커튼콜'
 def _logo_mask(text, font='Galmuri11-Bold.ttf', size=12):
-    f=ImageFont.truetype(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/tools/galmuri/'+font,size)
+    f=ImageFont.truetype(ROOT+'_work/tools/galmuri/'+font,size)
     w=int(f.getlength(text))+4; pil=Image.new('L',(w,size+6),0)
     ImageDraw.Draw(pil).text((2,2),text,font=f,fill=255)
     m=np.asarray(pil)>127; ys=np.nonzero(m.any(1))[0]; xs=np.nonzero(m.any(0))[0]
@@ -142,3 +142,49 @@ _old4=specs
 def specs(names):
     S=_old4(names); S[2411]=logo_strip; S[2408]=logo_main; S[2409]=logo_back
     return S
+
+# ---- 프롤로그·에필로그·튜토리얼 로고 아래 일본어 부제 ----
+def logo_sub(box, font='Galmuri9.ttf', size=10):
+    def f(im):
+        import cv2
+        x0, y0, x1, y1 = box; out = im.copy()
+        reg = out[y0:y1, x0:x1].astype(np.float32)
+        L = reg[..., :3].sum(-1); bg = np.median(L)
+        sat = reg[..., :3].max(-1) - reg[..., :3].min(-1)
+        ink = (sat < 45) & (L < 600) & (reg[..., 3] > 0)
+        fill = np.median(reg[ink][:, :3], 0) if ink.any() else np.array([80, 60, 30])
+        mask = cv2.dilate(ink.astype(np.uint8), np.ones((3, 3), np.uint8))
+        rgb = cv2.inpaint(np.ascontiguousarray(reg[..., :3].astype(np.uint8)), mask, 3, cv2.INPAINT_TELEA)
+        reg[..., :3] = rgb
+        fo = ImageFont.truetype(ROOT + '_work/tools/galmuri/' + font, size)
+        w = int(fo.getlength(LOGO_KO)) + 4; pil = Image.new('L', (w, size + 6), 0)
+        ImageDraw.Draw(pil).text((2, 2), LOGO_KO, font=fo, fill=255)
+        m = np.asarray(pil) > 127; ys = np.nonzero(m.any(1))[0]; xs = np.nonzero(m.any(0))[0]
+        m = m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]; h, w = m.shape
+        oy = (reg.shape[0] - h) // 2; ox = (reg.shape[1] - w) // 2
+        sub = reg[oy:oy + h, ox:ox + w]; sub[m, :3] = fill
+        out[y0:y1, x0:x1] = np.clip(reg, 0, 255).astype(np.uint8)
+        return out
+    return f
+_old5 = specs
+def specs(names):
+    S = _old5(names)
+    S[1643] = S[1603] = logo_sub((78, 164, 242, 178))
+    S[2476] = logo_sub((12, 92, 160, 102), 'Galmuri7.ttf', 8)
+    return S
+def logo_sub_small(im):
+    """튜토리얼 로고: 부제 띠는 흰 테두리 위 회색 글자라 띠 전체를 흰색으로 덮고 다시 쓴다"""
+    out = im.copy(); y0, y1 = 92, 102
+    band = out[y0:y1]; a = band[..., 3] > 0
+    band[a, :3] = 255
+    fo = ImageFont.truetype(ROOT + '_work/tools/galmuri/Galmuri7.ttf', 8)
+    w = int(fo.getlength(LOGO_KO)) + 4; pil = Image.new('L', (w, 14), 0)
+    ImageDraw.Draw(pil).text((2, 2), LOGO_KO, font=fo, fill=255)
+    m = np.asarray(pil) > 127; ys = np.nonzero(m.any(1))[0]; xs = np.nonzero(m.any(0))[0]
+    m = m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]; h, w = m.shape
+    oy = y0 + (y1 - y0 - h) // 2; ox = (out.shape[1] - w) // 2
+    sub = out[oy:oy + h, ox:ox + w]; sub[m, :3] = (70, 60, 50); sub[m, 3] = 255
+    return out
+_old6 = specs
+def specs(names):
+    S = _old6(names); S[2476] = logo_sub_small; return S
