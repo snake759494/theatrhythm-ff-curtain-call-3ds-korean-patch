@@ -1,0 +1,24 @@
+# 게임 원본·산출물 (배포하지 않음)
+*.3ds
+*.cia
+*.cxi
+*.cfa
+*.bin
+*.xdelta
+romfs/
+out_romfs/
+_view/
+text/*_jp.json
+tr/
+
+# 글꼴·외부 실행 파일
+*.ttf
+*.otf
+*.exe
+tools/3dstool/
+tools/azahar/
+tools/galmuri/
+
+# 파이썬
+__pycache__/
+*.pyc

@@ -1,0 +1,399 @@
+{
+ "message/record_jp.mdt": {
+  "3": "총 플레이 횟수",
+  "12": "기본 악보 클리어 곡 수",
+  "13": "숙련 악보 클리어 곡 수",
+  "14": "궁극 악보 클리어 곡 수",
+  "44": "보물상자 수",
+  "48": "체",
+  "273": "미확인 추가 악곡",
+  "276": "뒤로"
+ },
+ "table/CardTable.csv": {
+  "318": "에스타병",
+  "348": "영겁 암흑",
+  "366": "암흑왕",
+  "427": "빨아들임"
+ },
+ "table/BgTable.csv": {
+  "5": "☆【FF2】성내 ",
+  "31": "☆【FF11】아제비아-천상사슬 ",
+  "45": "☆【영식】신성한 영역 ",
+  "74": "☆【범용】동굴:갈색 ",
+  "77": "☆【범용】아공간:빛나는 흰 구름 ",
+  "78": "☆【범용】아공간:우주 ",
+  "133": "☆【FF10】뇌평원 ",
+  "149": "☆【FF13】오르바촌 ",
+  "150": "★【FF14】신생 검은장막 [New!]",
+  "167": "☆【범용】바위:별밤 ",
+  "172": "☆【범용】시:낮 ",
+  "173": "☆【범용】시:저녁 ",
+  "174": "☆【범용】시:밤 ",
+  "178": "☆【범용】유적:적색"
+ },
+ "message/unlock_rhythpo_jp.mdt": {
+  "26": "홍",
+  "27": "남",
+  "28": "황",
+  "29": "취",
+  "30": "도",
+  "31": "자",
+  "32": "등",
+  "33": "벽",
+  "34": "백",
+  "35": "금",
+  "36": "은",
+  "37": "흑"
+ },
+ "table/ItemTable.csv": {
+  "13": "헤르메스 신발",
+  "64": "동전투척의 서",
+  "83": "초급 거짓울음의 서",
+  "84": "중급 거짓울음의 서",
+  "85": "상급 거짓울음의 서",
+  "88": "걸으면 HP회복의 서"
+ },
+ "table/MusicTable.csv": {
+  "14": "읍",
+  "22": "유구한 풍",
+  "29": "적익대",
+  "39": "네 마음",
+  "54": "투쟁자들",
+  "55": "더욱 투쟁자들",
+  "61": "별 내린 협곡",
+  "71": "잠 없는 거리 트레노",
+  "87": "극북의 민",
+  "93": "자유 위한 투쟁",
+  "102": "운명에의 반역",
+  "104": "숙명에의 저항",
+  "112": "하늘서 내려온 힘",
+  "114": "작열의 땅에",
+  "117": "푸른 깃",
+  "128": "바람소리",
+  "131": "투쟁자들 (Piano Version)",
+  "139": "간극의 급습 (FFVII 『투쟁자들』에서)",
+  "147": "어둠 수호자2",
+  "158": "전－백의 병기",
+  "159": "주작 불꽃",
+  "161": "하늘 날다",
+  "171": "수려한 군신",
+  "176": "혼의 해방자"
+ },
+ "message/main_menu_infomation_jp.mdt": {
+  "33": "\u0002\u0001근처 사람과 \u0002\fBMS 대전\u0002\u0001을 즐길 수 있습니다."
+ },
+ "text/tutorial_other_Japanese.tdt": {
+  "0": "뒤로",
+  "17": "◆ 전체:상자"
+ },
+ "text/vsbattle_up_Japanese.tdt": {
+  "34": "몰입도"
+ },
+ "text/tutorial_bms_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "table/AbilityTable.csv": {
+  "56": "모으기",
+  "60": "동전투척",
+  "72": "덫 발견",
+  "76": "달래기",
+  "119": "무쌍 번개찌름"
+ },
+ "text/museum_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/main_menu_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "table/VersusCpuTable.csv": {
+  "1": "창공의 희망 기병대",
+  "7": "드높은 악몽 부르는 마도대",
+  "8": "광기 품은 파동의 어린이회",
+  "11": "다정한 대지의 열혈한",
+  "13": "모략 꾸미는 사선의 복면단",
+  "16": "주저 없는 단죄의 사총사",
+  "18": "어둠보다 깊은 낙인 반란군",
+  "22": "수수께끼 이단 기사수도회",
+  "24": "어스름한 복수 비밀결사",
+  "25": "티 없는 영겁의 연합군",
+  "28": "고리 도는 저주받은 기사단",
+  "29": "시간 달리는 바람 수염들",
+  "30": "희대의 무기 다루는 일좌",
+  "31": "되살아난 홍련의 격노대",
+  "33": "종언 고하는 새벽의 성가대",
+  "35": "재앙 부르는 파멸의 전단",
+  "36": "심판 내리는 결연한 황군",
+  "37": "혼돈의 홍염 특공대",
+  "39": "진동하는 몽상 바라는 일좌",
+  "43": "어둠 꿰뚫는 축복 반상회",
+  "45": "별의 소원 품은 투쟁자들",
+  "53": "용서받지 못할 묵시록 기관",
+  "56": "결의를 품은 더욱 투쟁자들",
+  "62": "시간 새기는 영웅들의 모임",
+  "63": "목숨 걸고 희망 이루는 대"
+ },
+ "message/file_select_jp.mdt": {
+  "19": "신규 작성"
+ },
+ "text/config_select_Japanese.tdt": {
+  "8": "뒤로"
+ },
+ "message/select_quest_map_jp.mdt": {
+  "53": "우측 보기",
+  "63": "뒤로"
+ },
+ "text/record_Japanese.tdt": {
+  "0": "뒤로",
+  "4": "총 플레이 횟수",
+  "15": "궁극 악보 클리어 곡 수",
+  "18": "의 획득수",
+  "45": "보물상자 수",
+  "49": "체"
+ },
+ "message/party_top_jp.mdt": {
+  "30": "홍",
+  "31": "남",
+  "32": "황",
+  "33": "취",
+  "34": "도",
+  "35": "자",
+  "36": "등",
+  "37": "벽",
+  "38": "백",
+  "41": "흑",
+  "58": "뒤로"
+ },
+ "text/tutorial_ems_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "message/touch_sound_name_jp.mdt": {
+  "7": "아군공격 HIT(FFⅡ)",
+  "24": "검 베기(FFⅥ)",
+  "31": "기쁜 초코보(FFⅦ)",
+  "34": "패 성립(FFⅧ)",
+  "37": "검 베기(FFⅨ)",
+  "47": "토로의 검_베기(FFXII)"
+ },
+ "text/streetpass_profica_Japanese.tdt": {
+  "13": "(전[총곡수]곡)",
+  "14": "(전[총곡수]곡/추가악곡[총DLC곡수]곡 포함)",
+  "26": "(전[총BMS곡수]곡)",
+  "27": "(전[총BMS곡수]곡/추가악곡[총BMSDLC곡수]곡 포함)",
+  "48": "입수 컬렉카 종류"
+ },
+ "table/MonsterTable.csv": {
+  "31": "에스타병",
+  "37": "영겁 암흑",
+  "44": "암흑왕"
+ },
+ "message/colleca_crystarium_jp.mdt": {
+  "3": "CRITICAL률UP 보정",
+  "19": "CRITICAL률UP 보정",
+  "45": "뒤로",
+  "48": "중단"
+ },
+ "text/quest_medley_map_select_Japanese.tdt": {
+  "0": "뒤로",
+  "37": "우측 보기"
+ },
+ "message/battle_result_jp.mdt": {
+  "40": "남은 %ls초"
+ },
+ "message/profile_card_jp.mdt": {
+  "14": "(전체 %ls곡/추가악곡 %ls곡 포함)",
+  "27": "(전체 %ls곡/추가악곡 %ls곡 포함)",
+  "48": "입수 컬렉카 종류",
+  "65": "미확인 추가 악곡"
+ },
+ "text/quest_medley_top_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/streetpass_edit_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/streetpass_top_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/level_select_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/prologue_Japanese.tdt": {
+  "8": "유구한 시간이 흐르는 중,"
+ },
+ "text/tutorial_fms_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "message/quest_map_jp.mdt": {
+  "9": "영웅의 약 효과 발동중",
+  "13": "헤르메스 신발 효과 발동중",
+  "20": "우측 보기",
+  "22": "맵으로 복귀",
+  "34": "취득됨",
+  "36": "GET됨",
+  "40": "중단",
+  "41": "뒤로"
+ },
+ "text/crystalium_Japanese.tdt": {
+  "2": "중단",
+  "5": "CRITICAL률UP 보정",
+  "42": "뒤로"
+ },
+ "message/colleca_result_jp.mdt": {
+  "11": "남은 %ls초"
+ },
+ "common/window/mode_news_popup_jp.mdt": {
+  "4": "\u0002\u0005카오스 신전\u0002\u0001을 플레이할 수 있게 됐습니다!"
+ },
+ "text/vsbattle_matching_Japanese.tdt": {
+  "0": "뒤로",
+  "15": "\u0002\u0001대전 상대를 기다리는 중…",
+  "20": "몰입도"
+ },
+ "message/check_profile_card_jp.mdt": {
+  "8": "뒤로"
+ },
+ "message/music_player_jp.mdt": {
+  "11": "뒤로"
+ },
+ "text/retry_Japanese.tdt": {
+  "4": "\u0002\u0001통신 끊는 중입니다."
+ },
+ "text/questmedley_ticket_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "message/exp_result_jp.mdt": {
+  "19": "%ls이(가) %ls 사용!"
+ },
+ "message/music_select_jp.mdt": {
+  "23": "ㅊㅎ",
+  "60": "뒤로"
+ },
+ "message/fixed_map_jp.mdt": {
+  "9": "(임시)고정 지도명"
+ },
+ "message/quest_result_jp.mdt": {
+  "10": "최종 보스"
+ },
+ "text/result_lvup_Japanese.tdt": {
+  "15": "[캐릭터명]이(가) [어빌리티의 서]을(를) 사용했다!"
+ },
+ "message/unlock_character_jp.mdt": {
+  "0": "홍",
+  "2": "황",
+  "3": "취",
+  "4": "도",
+  "5": "자",
+  "6": "등"
+ },
+ "message/battle_again_check_jp.mdt": {
+  "6": "\u0002\u0001통신 끊는 중입니다."
+ },
+ "text/quest_medley_progress_Japanese.tdt": {
+  "7": "우측 보기",
+  "9": "맵으로 복귀",
+  "19": "최종 보스",
+  "27": "중단"
+ },
+ "text/title_title_Japanese.tdt": {
+  "3": "몰입도",
+  "17": "신규 작성"
+ },
+ "text/streetpass_confirm_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/epilogue_Japanese.tdt": {
+  "7": "음악을 엮는 여행은 계속→←"
+ },
+ "message/movie_player_jp.mdt": {
+  "8": "뒤로"
+ },
+ "message/versus_battle_jp.mdt": {
+  "3": "\u0002\u0001대전 상대를 기다리는 중…"
+ },
+ "text/card_viewer_Japanese.tdt": {
+  "14": "뒤로"
+ },
+ "text/config_delete_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/questmedley_stop_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/download_list_Japanese.tdt": {
+  "0": "뒤로",
+  "8": "페이지 받는 중"
+ },
+ "text/vsbattle_setting_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/character_viewer_Japanese.tdt": {
+  "6": "뒤로"
+ },
+ "text/vsbattle_top_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/party_select_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/vsbattle_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "message/quest_standby_jp.mdt": {
+  "2": "최종 보스",
+  "7": "키 입수"
+ },
+ "text/quest_medley_result_Japanese.tdt": {
+  "6": "최종 보스"
+ },
+ "text/music_select_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/vsbattle_search_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/config_sound_Japanese.tdt": {
+  "1": "중단"
+ },
+ "text/vsbattle_cpu_top_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/config_common_Japanese.tdt": {
+  "2": "몰입도"
+ },
+ "text/vsbattle_internet_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/streetpass_editchar_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/music_select_sort_Japanese.tdt": {
+  "4": "중단"
+ },
+ "text/streetpass_editdesin_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/config_help_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/vsbattle_cpu_select_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/streetpass_editname_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/card_collection_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/quest_medley_map_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "text/quest_medley_progress_item_Japanese.tdt": {
+  "0": "뒤로"
+ },
+ "common/chara/ADD042/main_menu_words.mdt": {
+  "8": "…아버지…엄마…\n원수는 갚았어…!"
+ },
+ "common/chara/ADD131/main_menu_words.mdt": {
+  "12": "다음엔 조금만\n어리광 부릴게요……"
+ }
+}

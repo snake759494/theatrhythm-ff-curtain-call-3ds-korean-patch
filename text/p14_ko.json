@@ -1,0 +1,125 @@
+{
+ "text/config_common_Japanese.tdt": [
+  "플레이어 이름",
+  "리즈포",
+  "파고들기 정도",
+  "플레이 시간",
+  "획득 업적",
+  "pt",
+  "1234567890"
+ ],
+ "table/SummonTable.csv": [
+  "시바",
+  "라무",
+  "이프리트",
+  "오딘",
+  "바하무트",
+  "나이츠 오브 라운드",
+  "초코보"
+ ],
+ "text/quest_retry_Japanese.tdt": [
+  "혼돈의 지도 선택\n복귀",
+  "에테라이트에서\n퀘스트\n재개"
+ ],
+ "text/vsbattle_internet_Japanese.tdt": [
+  "돌아가기",
+  "결정",
+  "파티 편성",
+  "1234567890",
+  "누구나",
+  "친구",
+  "승"
+ ],
+ "table/SupporterTable.csv": [
+  "초코보",
+  "빨간 초코보",
+  "검은 초코보",
+  "하얀 초코보",
+  "모그리",
+  "뚱보 초코보"
+ ],
+ "message/dlc_top_jp.mdt": [
+  "통신을 끊고 파일 선택으로 돌아갑니다.\n괜찮습니까?"
+ ],
+ "text/streetpass_editchar_Japanese.tdt": [
+  "돌아가기",
+  "결정",
+  "카드에 실을 캐릭터를 선택하세요"
+ ],
+ "text/music_select_sort_Japanese.tdt": [
+  "결정",
+  "타이틀별",
+  "곡명별",
+  "MS별",
+  "그만두기",
+  "수록/\n추가별"
+ ],
+ "text/streetpass_editdesin_Japanese.tdt": [
+  "돌아가기",
+  "결정",
+  "카드 디자인과 컬러를 선택하세요"
+ ],
+ "text/party_select_list_Japanese.tdt": [
+  "/",
+  "선택됨",
+  "결정",
+  "종료",
+  "1234567890"
+ ],
+ "text/card_collection_up_card_back_Japanese.tdt": [
+  "컬렉션",
+  "카드 바인더"
+ ],
+ "text/card_collection_up_card_cover_Japanese.tdt": [
+  "컬렉션",
+  "카드 바인더"
+ ],
+ "text/config_help_Japanese.tdt": [
+  "돌아가기",
+  "결정",
+  "튜토리얼",
+  "도움말"
+ ],
+ "text/vsbattle_cpu_select_Japanese.tdt": [
+  "돌아가기",
+  "결정",
+  "파티 편성",
+  "승리 보상"
+ ],
+ "text/download_connect_Japanese.tdt": [
+  "잠시 기다려 주세요"
+ ],
+ "text/streetpass_editchar_list_Japanese.tdt": [
+  "/",
+  "1234567890"
+ ],
+ "message/notification_text_jp.mdt": [
+  "%ls의 프로피카"
+ ],
+ "text/streetpass_editname_Japanese.tdt": [
+  "돌아가기",
+  "결정",
+  "자동 선택"
+ ],
+ "text/card_collection_Japanese.tdt": [
+  "돌아가기",
+  "보기",
+  "전환"
+ ],
+ "text/questmedley_plain_Japanese.tdt": [
+  "OK",
+  "예",
+  "아니요"
+ ],
+ "message/main_menu_words_chocobo_jp.mdt": [
+  "쿠에엣"
+ ],
+ "text/quest_medley_map_Japanese.tdt": [
+  "돌아가기"
+ ],
+ "text/quest_medley_progress_item_Japanese.tdt": [
+  "돌아가기"
+ ],
+ "text/party_up_item_Japanese.tdt": [],
+ "text/title_naming_Japanese.tdt": []
+}
